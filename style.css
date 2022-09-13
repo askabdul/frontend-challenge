@@ -1169,6 +1169,10 @@ footer {
   transition: all 0.3s ease;
 }
 
+.mobile-view {
+  display: none;
+}
+
 
 
 /* ----------media queries ------------- */
@@ -1549,7 +1553,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 600px) {
   /* For desktop: */
 
   body {
@@ -1564,8 +1568,24 @@ footer {
     gap: 2em;
   }
 
+
+
+  .mobile-view {
+    display: block;
+  }
+
+
+
   .hero h1 {
-    font-size: 5em;
+    font-size: 3em;
+  }
+
+  .hero p:first-of-type {
+    display: none;
+  }
+
+  .hero p:last-of-type {
+    font-size: 20px;
   }
 
   .overlap .first {
@@ -1586,8 +1606,17 @@ footer {
 
   .hero1 {
     flex-direction: column;
-    gap: 3em;
+    gap: 5em;
     align-items: center;
+    margin-top: -10em;
+  }
+
+  .texts p:first-of-type {
+    display: none;
+  }
+
+  .texts p:last-of-type {
+    font-size: 20px;
   }
 
   .connection {
@@ -1595,6 +1624,25 @@ footer {
     gap: 20em;
     align-items: center;
     margin-bottom: 15em;
+  }
+
+  .con-texts p:first-of-type {
+    display: none;
+  }
+
+  .con-texts p:last-of-type {
+    font-size: 20px;
+
+  }
+
+
+  .greeny p:first-of-type {
+    display: none;
+  }
+
+  .greeny p:last-of-type {
+    font-size: 20px;
+    text-align: center;
   }
 
   .chat-area {
@@ -1612,22 +1660,23 @@ footer {
   }
 
   .chat-content {
-    width: 713px;
+    width: unset;
+    padding: 0 1em;
   }
 
   .profile-details {
-    width: 704px;
+    width: unset;
   }
 
   .typing-area div {
-    width: 600px;
+    width: 280px;
   }
 
   .mobile-influencers {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 3em;
+    margin-bottom: -24em;
   }
 
   .caller {
@@ -1637,22 +1686,75 @@ footer {
     /* background: #272727;   */
   }
 
+  .influencers p:first-of-type {
+    display: none;
+  }
+
+  .influencers p:last-of-type {
+    font-size: 20px;
+    text-align: center;
+  }
+
   .filter {
     width: 100%;
   }
 
-  .img2 {
-    top: 11em;
+  .img1 {
+    bottom: -26.6em;
   }
 
+  .img1 img {
+    width: 350px;
+  }
+
+  .img2 img {
+    width: 308px;
+  }
+
+  .img2 {
+    top: 13em;
+  }
+
+  .btns button:first-child {
+    width: 120px;
+}
+
+.get-it {
+  margin-top: 0em;
+}
+
+.btns button:last-child {
+  width: 120px;
+}
+
+.timeline-container {
+  padding: 0px 0px 0 32px;
+height: 32em;
+margin-top: 5em;
+}
+
   .stacks {
-    top: 16em;
+    top: 15em;
+  }
+
+  .pic-id p:first-of-type {
+    display: none;
+  }
+
+  .filter p:first-of-type {
+    display: none;
+  }
+
+  .filter p:last-of-type {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 1em;
   }
 
   .assurance .wrapper {
     flex-direction: column;
     align-items: center;
-    gap: 10em;
+    /* gap: 10em; */
   }
 
   .stores {
@@ -1660,28 +1762,50 @@ footer {
     align-items: center;
     width: 100%;
     gap: 20em;
-    height: 100vh;
+    height: 58em;
   }
 
   .hand img:first-child {
-    top: -29.4em;
+    top: -23em;
+    width: 332px;
   }
 
   .hand img:last-child {
-    bottom: 7.8em;
+    bottom: 9em;
+    left: -2.1em;
   }
 
   .footer-texts p {
-    right: 1.5em;
+    font-size: 15px;
+right: 8;
+padding: 0 3em;
+text-align: center;
   }
 
   .footer-texts div input {
-    width: 592px;
-  }
+    width: 350px;  }
 
   .all-links {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 3em;
   }
+
+  .overlap .second {
+    width: 300px;
+}
+
+.overlap .first {
+
+    width: 310px;
+    left: -12em;
+    top: 5.8em;
+
+}
+
+.overlap .third {
+  width: 310px;
+  top: 5.4em;
+  right: -15em;
+}
 }
